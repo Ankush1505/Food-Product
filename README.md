@@ -2,6 +2,11 @@
 
 Food Product Explorer is a web application that allows users to search, filter, and view detailed information about food products using the OpenFoodFacts API. This app is built with ReactJS, HTML, CSS, and JavaScript to deliver an interactive and user-friendly experience.
 
+
+<img width="1680" alt="Screenshot 2025-01-14 at 8 48 42 PM" src="https://github.com/user-attachments/assets/f5abb617-7567-4164-afea-985935d3b390" />
+
+
+
 ---
 
 ## 🌟 Features
