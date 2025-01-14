@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Food Product Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Food Product Explorer is a web application that allows users to search, filter, and view detailed information about food products using the OpenFoodFacts API. This app is built with ReactJS, HTML, CSS, and JavaScript to deliver an interactive and user-friendly experience.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+### 1. Homepage
+- Displays a list of food products fetched from the OpenFoodFacts API.
+- Each product shows key information:
+  - **Product Name**
+  - **Image**
+  - **Category**
+  - **Ingredients** (if available)
+  - **Nutrition Grade** (A, B, C, D, E)
+- Supports pagination via infinite scrolling or load-more functionality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Search Functionality
+- **Search by Name**: Users can search for food products by entering the product name.
+- **Search by Barcode**: Users can search for food products by entering their barcode.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. Filter by Category
+- Provides a dropdown or sidebar filter to select food product categories (e.g., Beverages, Dairy, Snacks).
+- Dynamically fetches categories from the OpenFoodFacts API.
 
-### `npm test`
+### 4. Sort Functionality
+- Allows sorting of food products by:
+  - **Product Name** (A-Z, Z-A)
+  - **Nutrition Grade** (Ascending/Descending)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 5. Product Detail Page
+- Clicking on a product redirects users to a detailed product page.
+- Displays the following details:
+  - **Product Image**
+  - **Full List of Ingredients**
+  - **Nutritional Values** (e.g., energy, fat, carbs, proteins)
+  - **Labels** (e.g., vegan, gluten-free)
 
-### `npm run build`
+### 6. Responsive Design
+- Fully responsive design, optimized for both mobile and desktop screens.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **ReactJS**: Frontend framework for building the user interface.
+- **CSS**: Styling the application for a visually appealing design.
+- **OpenFoodFacts API**: Used to fetch food product data.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔗 API Endpoints
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Base URL**: `https://world.openfoodfacts.org/`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Sample Endpoints**:
+  - Get products by category:  
+    `https://world.openfoodfacts.org/category/{category}.json`
+  - Search products by name:  
+    `https://world.openfoodfacts.org/cgi/search.pl?search_terms={name}&json=true`
+  - Get product details by barcode:  
+    `https://world.openfoodfacts.org/api/v0/product/{barcode}.json`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Example Query**:  
+  `https://world.openfoodfacts.org/api/v0/product/737628064502.json`  
+  (Retrieves detailed product information for a specific product by barcode.)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🚀 Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Prerequisites
+- Node.js installed on your system.
+- A code editor (e.g., VS Code) for development.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/food-product-explorer.git
+   
